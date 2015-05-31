@@ -1,30 +1,98 @@
 /* app css stylesheet */
 
 .menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
 }
 
 .menu:before {
-  content: "[";
+    content: "[";
 }
 
 .menu:after {
-  content: "]";
+    content: "]";
 }
 
 .menu > li {
-  display: inline;
+    display: inline;
 }
 
 .menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+    content: "|";
+    padding-right: 0.3em;
 }
 
 .menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+    content: "";
+    padding: 0;
+}
+
+/*home page*/
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0 auto;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 18px;
+    float: none;
+}
+
+.navbar-collapse.collapse {
+    background-color: gainsboro;
+    margin: 0 auto;
+}
+
+.logo {
+    float: right;
+    width: 100%;
+    background-color: gainsboro;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    height: 100px;
+    background-color: gainsboro;
+    margin-top: 20px;
+}
+
+html, body, .container {
+    width: 100%;
+    padding: 0;
+
+    background: -moz-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
+    /*background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(210,255,82)), color-stop(100%, rgb(145,232,66)));*/
+    background: -webkit-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
+    background: -o-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
+    background: -ms-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
+    background: linear-gradient(135deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1);
+}
+
+.wrapper {
+    max-width: 980px;
+    margin: 0 auto;
 }
