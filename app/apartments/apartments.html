@@ -1,0 +1,367 @@
+<form id="form" class="form" name="form" ng-submit="submit()" ng-controller="ApartmentsCtrl"
+      enctype="application/x-www-form-urlencoded"
+      accept-charset="UTF-8">
+    <h1>Анкета</h1>
+
+    <div class="content">
+        <div class="intro">ФОРМИРОВАНИЯ ТЕХНИЧЕСКОГО ЗАДАНИЯ НА ПРОЕКТИРОВАНИЕ</div>
+        <div id="section0">
+            <div class="field"><label for="name">1. ФИО *</label><input type="text" id="name" name="1." class="full"
+                                                                        required></div>
+            <div class="field"><label for="phone">2. Телефон *</label><input type="text" id="phone" name="2. Phone:"
+                                                                             class="full" required></div>
+            <div class="field"><label for="email">Email *</label><input type="text" id="email" name="2. Email:"
+                                                                        class="full"
+                                                                        required>
+            </div>
+            <div class="field"><label for="address">3. Адрес</label><input type="text" id="address" name="3."
+                                                                           class="full"></div>
+            <div class="field">
+                <label for="members">4. Сколько человек будет проживать в проектируемой квартире, имена,
+                    возраст, род занятия </label>
+                <textarea id="members" name="4." wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="animal">5. Домашние животные</label>
+                <span class="point">
+                    <input type="radio" value="Есть" id="animal" name="5.">
+                    <span>Есть</span>
+                </span>
+                <span class="point">
+                    <input type="radio" value="Нету" id="animal" name="5.">
+                    <span>Нету</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="animals1">Если есть, то кто</label>
+                <textarea id="animals1" name="Animals:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="zones">6. Устраивает ли вас распределение функциональных зон и площади в
+                    существующем проекте</label>
+                <span class="point">
+                    <input type="radio" value="Да" id="zones" name="6.">
+                    <span>Да</span>
+                </span>
+                <span class="point">
+                    <input type="radio" value="Нет" id="zones" name="6.">
+                    <span>Нет</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="changes">Если нет, что хотелось бы изменить</label>
+                <textarea id="changes" name="Desired changes:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label>7. Какие требования Вы предъявляете к функциональным зонам
+                    квартиры (пространственная характеристика, желаемые отделочные материалы, комплектация мебелью и
+                    оборудованием)</label>
+            </div>
+            <div class="field">
+                <label for="hall">7.1 Прихожая, холл</label>
+                <textarea id="hall" name="7.1" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="kitchen">7.2 Кухня</label>
+                <textarea id="kitchen" name="7.2" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="kitchen1">Комплектация оборудованием</label>
+                <span class="point">
+                    <input type="checkbox" value="Холодильник" id="kitchen1" name="-">
+                    <span>Холодильник</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Морозильная камера" id="kitchen1" name="-">
+                    <span>Морозильная камера</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Мойка" id="kitchen1" name="-">
+                    <span>Мойка</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Фильтр" id="kitchen1" name="-">
+                    <span>Фильтр</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Диспоузер - измельчитель" id="kitchen1" name="-">
+                    <span>Диспоузер - измельчитель</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Посудомоечная машина" id="kitchen1" name="-">
+                    <span>Посудомоечная машина</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Варочная поверхность" id="kitchen1" name="-">
+                    <span>Варочная поверхность</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Вытяжка" id="kitchen1" name="-">
+                    <span>Вытяжка</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Духовой шкаф" id="kitchen1" name="-">
+                    <span>Духовой шкаф</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Микроволновая печь" id="kitchen1" name="-">
+                    <span>Микроволновая печь</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Встраиваемая кофемашина" id="kitchen1" name="-">
+                    <span>Встраиваемая кофемашина</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Встраиваемая пароварка" id="kitchen1" name="-">
+                    <span>Встраиваемая пароварка</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Телевизор" id="kitchen1" name="-">
+                    <span>Телевизор</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="dining">7.3 Столовая</label>
+                <textarea id="dining" name="7.3" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="lounge">7.4 Гостиная</label>
+                <textarea id="lounge" name="7.4" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="cabinet">7.5 Кабинет</label>
+                <textarea id="cabinet" name="7.5" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="bedroom">7.6 Спальня</label>
+                <textarea id="bedroom" name="7.6" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="nursery">7.7 Детская, игровая</label>
+                <textarea id="nursery" name="7.7" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="guest">7.8 Гостевая комната</label>
+                <textarea id="guest" name="7.8" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="wardrobe">7.9 Гардеробная</label>
+                <textarea id="wardrobe" name="7.9" wrap="hard"></textarea>
+
+                <div class="field">
+                    <label for="wardrobe1">Предпочтения по системам хранения</label>
+                    <span class="point">
+                        <input type="checkbox" value="Обувь в коробках" id="wardrobe1" name="-">
+                        <span>Обувь в коробках</span>
+                    </span>
+                    <span class="point">
+                        <input type="checkbox" value="Обувь на открытых полках" id="wardrobe1" name="-">
+                        <span>Обувь на открытых полках</span>
+                    </span>
+                    <span class="point">
+                        <input type="checkbox" value="Обувь на держателях" id="wardrobe1" name="-">
+                        <span>Обувь на держателях</span>
+                    </span>
+                    <span class="point">
+                        <input type="checkbox" value="Одежда на вешалках" id="wardrobe1" name="-">
+                        <span>Одежда на вешалках</span>
+                    </span>
+                    <span class="point">
+                        <input type="checkbox" value="Одежда на открытых полках" id="wardrobe1" name="-">
+                        <span>Одежда на открытых полках</span>
+                    </span>
+                    <span class="point">
+                        <input type="checkbox" value="Одежда на закрытых полках" id="wardrobe1" name="-">
+                        <span>Одежда на закрытых полках</span>
+                    </span>
+                    <span class="point">
+                        <input type="checkbox" value="Одежда в выдвижных корзинах" id="wardrobe1" name="-">
+                        <span>Одежда в выдвижных корзинах</span>
+                    </span>
+                    <span class="point" style="width: 100%">
+                        <input type="checkbox"
+                               value="Cпециальная мебельная фурнитура для хранения аксессуаров – галстуков, ремней, сумок"
+                               id="wardrobe1" name="-">
+                        <span style="display: inline; width: 90%;">
+                            Cпециальная мебельная фурнитура для хранения аксессуаров – галстуков, ремней, сумок</span>
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label for="toiletMain">7.10 Санузел основной</label>
+                <textarea id="toiletMain" name="7.10" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="toiletGuest">7.11 Санузел гостевой</label>
+                <textarea id="toiletGuest" name="7.11" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="priority">8. Какие функциональные зоны квартиры являются для Вас приоритетными ?</label>
+                <textarea id="priority" name="8" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="wishes">9. Есть пожелание дополнительных зон, например, барная стойка, камин, пианино,
+                    бильярд?</label>
+                <textarea id="wishes" name="9" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="shapes">10. Какие формы Вы предпочитаете</label>
+                <span class="point">
+                    <input type="checkbox" value="Только прямоугольные" id="shapes" name="10">
+                    <span>Только прямоугольные</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Правильные геометрические" id="shapes" name="10">
+                    <span>Правильные геометрические</span>
+                </span>
+                <span class="point">
+                    <input type="checkbox" value="Mягкие округлые" id="shapes" name="-">
+                    <span>Mягкие округлые</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="colors">11. Какие цвета Вам нравятся?</label>
+                <textarea id="colors" name="11" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="colorNo">12. Какие цвета Вам НЕ нравятся?</label>
+                <textarea id="colorNo" name="12" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="materials">13. Какие отделочные материалы Вам нравятся? </label>
+                <textarea id="materials" name="13" wrap="hard"></textarea></div>
+            <div class="field">
+                <label for="facing">14. Есть ли у Вас предпочтения по отделке определенных помещений? </label>
+                <textarea id="facing" name="14" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="style">15. Какие стили и направления Вам близки</label>
+                <span class="point">
+                <input type="checkbox" value="Лофт" id="style" name="15">
+                <span>Лофт</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Французкий шик" id="style" name="15">
+                <span>Французкий шик</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Класицизм" id="style" name="15">
+                <span>Класицизм</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Колониальный" id="style" name="15">
+                <span>Колониальный</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Модерн (кон. XIX- нач. XX)" id="style" name="15">
+                <span>Модерн (кон. XIX- нач. XX)</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Минимализм" id="style" name="15">
+                <span>Минимализм</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Хай-тек" id="style" name="15">
+                <span>Хай-тек</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Традиционный английский" id="style" name="15">
+                <span>Традиционный английский</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Скандинавский" id="style" name="15">
+                <span>Скандинавский</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Кантри" id="style" name="15">
+                <span>Кантри</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Восточный (Япония)" id="style" name="15">
+                <span>Восточный (Япония)</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Этнический" id="style" name="15">
+                <span>Этнический</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Морской" id="style" name="15">
+                <span>Морской</span>
+                </span>
+                <span class="point">
+                <input type="checkbox" value="Средиземноморский" id="style" name="15">
+                <span>Средиземноморский</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="expectations">16. Какое впечатление Вы хотите получить от будущего интерьера? </label>
+                <textarea id="expectations" name="16" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label>17. Инженерное оснащение объекта</label>
+            </div>
+            <div class="field">
+                <label for="conditioner">17.1 Система кондиционирования</label>
+                <span class="point">
+                    <input type="radio" value="Канальная" id="conditioner" name="17.1">
+                    <span>Канальная</span>
+                </span>
+                <span class="point">
+                    <input type="radio" value="Сплит" id="conditioner" name="17.1">
+                    <span>Сплит</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="ventilation">17.2 В каких помещениях необходима дополнительная вентиляция ?</label>
+                <textarea id="ventilation" name="17.2" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="flor">17.3 В каких помещениях необходимо обустройство теплого пола ?</label>
+                <textarea id="flor" name="17.3" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="water">17.4 Водоподготовка</label>
+                <span class="point" style="width: 100%">
+                    <input type="radio" value="Фильтрация всей воды поступающей в квартиру" id="water" name="17.4">
+                    <span class="water"
+                          style="display: inline; width: 90%;">Фильтрация всей воды поступающей в квартиру</span>
+                </span>
+                <span class="point" style="width: 100%">
+                    <input type="radio" value="Фильтрация только питьевой воды" id="water" name="17.4">
+                    <span class="water" style="display: inline; width: 90%;">Фильтрация только питьевой воды</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="multiroom">17.5 Система мультирум - управление звуком, светом, системой
+                    кондиционирования, портьерами с помощью пульта, панели управления, смартфона </label>
+                <textarea id="multiroom" name="17.5" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="tv">17.6 Телевидение </label>
+                <span class="point">
+                    <input type="radio" value="Спутниковое" id="tv" name="17.6">
+                    <span>Спутниковое</span>
+                </span>
+                <span class="point">
+                    <input type="radio" value="Кабельное" id="tv" name="17.6">
+                    <span>Кабельное</span>
+                </span>
+            </div>
+            <div class="field">
+                <label for="signaling">17.7 Охранная сигнализация</label>
+                <span class="point">
+                    <input type="radio" value="Да" id="signaling" name="17.7">
+                    <span>Да</span>
+                </span>
+                <span class="point">
+                    <input type="radio" value="Нет" id="signaling" name="17.7">
+                    <span>Нет</span>
+                </span>
+            </div>
+            <div class="field">
+                <label style="font-style: italic; margin: 30px 0">Поля со "*" обязательны для заполнения</label>
+            </div>
+            <div class="field"><input type="submit" id="send" name="send" value="Отправить" style="width: 30%"></div>
+        </div>
+    </div>
+</form>
