@@ -13,7 +13,6 @@ angular.module('myApp.home', ['ngRoute'])
             controller: 'HomeCtrl'
         });
     }])
-
     .controller('HomeCtrl', [function () {
 
     }]);
