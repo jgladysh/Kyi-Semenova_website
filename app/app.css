@@ -191,3 +191,17 @@ span.water {
 .point {
     width: 300px;
 }
+
+/*contacts page*/
+
+.contactsWrapper{
+    height: 350px;
+}
+
+.contactsRow{
+    margin-bottom: 10px;
+}
+
+.contactsBlock{
+    margin-bottom: 20px;
+}
