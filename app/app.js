@@ -12,7 +12,11 @@ angular.module('myApp', [
     'myApp.home',
     'myApp.apartments'
 ]).
-    config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
+    config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+
+
         $routeProvider.otherwise({redirectTo: '/home'});
+
         $locationProvider.html5Mode(true);
+
     }]);
