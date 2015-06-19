@@ -1,3 +1,31 @@
 {
-  "HELLO_WORLD" : " Hello World!"
+  "ADDRESS" : "26-B Yaroslaviv Val st., office 4, Kyiv, Ukraine",
+  "SEMENOVA" : "Svitlana Semenova - architect, landscape architect",
+  "TEL_SEMENOVA" : "+38 (050) 157 34 18",
+  "TEL" : "phone: ",
+  "KYI" : "Olga Kyi - architect, project head manager",
+  "TEL_KYI" : "+38 (096) 016 89 98",
+  "EMAIL" : "e-mail: ",
+  "EMAIL_KYI" : "olgakyi.architect@gmail.com",
+
+  "TITLE" : "Architecture of special places",
+
+  "MAIN": "MAIN",
+  "BUREAU": "BUREAU",
+  "TEAM": "TEAM",
+  "AWARDS": "AWARDS",
+  "PUBLICATIONS": "PUBLICATIONS",
+  "YOU_ARE_PLANING": "YOU ARE PLANING",
+  "SELECT_A_LOCATION": "SELECT A LOCATION",
+  "SPECIAL_HOUSE": "SPECIAL HOUSE",
+  "HOUSE_OF_FUTURE": "HOUSE OF FUTURE",
+  "INTERIOR_DESIGN": "INTERIOR DESIGN",
+  "CONCEPTUAL_BUSINESS_OBJECT": "CONCEPTUAL BUSINESS OBJECT",
+  "PARKS_AND_LANDSCAPES": "PARKS AND LANDSCAPES",
+  "PROJECTS": "PROJECTS",
+  "BUSINESS_OBJECTS": "BUSINESS OBJECTS",
+  "LIVING_SPACES": "LIVING SPACES",
+  "NEWS": "NEWS",
+  "CONTACTS": "CONTACTS",
+  "ABOUT_US": "ABOUT US"
 }

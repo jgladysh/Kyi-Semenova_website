@@ -21,11 +21,11 @@
     <link rel="stylesheet" href="/app.css">
     <script src="/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body ng-controller="translationController">
 <script src="/bower_components/angular/angular.js"></script>
 <script src="/bower_components/angular-route/angular-route.js"></script>
 <script data-require="angular-resource@1.2.14" data-semver="1.2.14"
-        src="http://code.angularjs.org/1.2.14/angular-resource.js"></script>
+        src="/bower_components/angular-resource/angular-resource.js"></script>
 <script src="/app.js"></script>
 <!--<script src="view1/view1.js"></script>-->
 <!--<script src="view2/view2.js"></script>-->
@@ -46,22 +46,18 @@
     <div class="logo">
         <h1>Kyi & Semenova Architect</h1>
 
-        <h2>Архитектура особенных мест</h2>
+        <h2>{{translation.TITLE}}</h2>
     </div>
 
     <div class="clear"></div>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div ng-controller="translationController">
+            <div>
                 <form ng-click="translate()">
                     <button value="en">En</button>
                     <button value="ua">Укр</button>
                     <button value="ru">Ру</button>
                 </form>
-                <p>
-                    {{translation.HELLO_WORLD}}
-                </p>
-
             </div>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -77,33 +73,40 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#/">ГЛАВНАЯ</a></li>
+                    <li><a href="#/">{{translation.MAIN}}</a></li>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">О
-                            НАС
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{translation.ABOUT_US}}
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#/">БЮРО</a></li>
-                            <li><a href="#/">КОМАНДА</a></li>
-                            <li><a href="#/">РАБОТЫ/НАГРАДЫ/ПУБЛИКАЦИИ</a></li>
-                            <li><a href="#/">КОНТАКТЫ</a></li>
+                            <li><a href="#/">{{translation.BUREAU}}</a></li>
+                            <li><a href="#/">{{translation.TEAM}}</a></li>
+                            <li><a href="#/">{{translation.AWARDS}}</a></li>
+                            <li><a href="#/">{{translation.PUBLICATIONS}}</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ЧТО
-                            ПРЕДЛАГАЕМ
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{translation.YOU_ARE_PLANING}}
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#/">ВЫБРАТЬ МЕСТО</a></li>
-                            <li><a href="#/">ОСОБЫЙ ДОМ</a></li>
-                            <li><a href="#/">ДОМ БУДУЩЕГО</a></li>
-                            <li><a href="#/apartments">ДИЗАЙН СРЕБЫ ОБИТАНИЯ</a></li>
-                            <li><a href="#/">КОНЦЕПТУАЛЬНЫЙ БИЗНЕС-ОБЪЕКТ</a></li>
-                            <li><a href="#/">ПАРКИ И ЛАНДШАФТЫ</a></li>
+                            <li><a href="#/">{{translation.SELECT_A_LOCATION}}</a></li>
+                            <li><a href="#/">{{translation.SPECIAL_HOUSE}}</a></li>
+                            <li><a href="#/">{{translation.HOUSE_OF_FUTURE}}</a></li>
+                            <li><a href="#/apartments">{{translation.INTERIOR_DESIGN}}</a></li>
+                            <li><a href="#/">{{translation.CONCEPTUAL_BUSINESS_OBJECT}}</a></li>
+                            <li><a href="#/">{{translation.PARKS_AND_LANDSCAPES}}</a></li>
                         </ul>
                     </li>
-                    <li><a href="#/news">НОВОСТИ</a></li>
-                    <li><a href="#/contacts">КОНТАКТЫ</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{translation.PROJECTS}}
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#/">{{translation.BUSINESS_OBJECTS}}</a></li>
+                            <li><a href="#/">{{translation.LIVING_SPACES}}</a></li>
+                            <li><a href="#/">{{translation.PARKS_AND_LANDSCAPES}}</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/news">{{translation.NEWS}}</a></li>
+                    <li><a href="#/contacts">{{translation.CONTACTS}}</a></li>
                 </ul>
             </div>
         </div>

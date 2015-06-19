@@ -1,3 +1,31 @@
 {
-    "HELLO_WORLD" : " Привiт Cвiт!"
+    "ADDRESS" : "м. Київ, вул. Ярославів Вал 26-Б, офіс 4",
+    "SEMENOVA" : "Світлана Семенова - архітектор, ландшафтний архітектор",
+    "TEL_SEMENOVA" : "+38 (050) 157 34 18",
+    "TEL" : "тел.: ",
+    "KYI" : "Ольга Кий - архітектор, керівник проектів",
+    "TEL_KYI" : "+38 (096) 016 89 98",
+    "EMAIL" : "e-mail: ",
+    "EMAIL_KYI" : "olgakyi.architect@gmail.com",
+
+    "TITLE" : "Архiтектура особливих мiсць",
+
+    "MAIN": "ГОЛОВНА",
+    "BUREAU": "БЮРО",
+    "TEAM": "КОМАНДА",
+    "AWARDS": "ВИНАГОРОДИ",
+    "PUBLICATIONS": "ПУБЛIКАЦIЇ",
+    "YOU_ARE_PLANING": "ВИ ПЛАНУЄТЕ",
+    "SELECT_A_LOCATION": "ОБРАТИ МIСЦЕ",
+    "SPECIAL_HOUSE": "ОСОБЛИВИЙ БУДИНОК",
+    "HOUSE_OF_FUTURE": "БУДИНОК МАЙБУТНЬОГО",
+    "INTERIOR_DESIGN": "ДИЗАЙН IНТЕР'ЄРА",
+    "CONCEPTUAL_BUSINESS_OBJECT": "КОНЦЕПТУАЛЬНИЙ БIЗНЕС-ОБ'ЄКТ",
+    "PARKS_AND_LANDSCAPES": "ПАРКИ I ЛАНДШАФТИ",
+    "PROJECTS": "ПРОЕКТИ",
+    "BUSINESS_OBJECTS": "БIЗНЕС-ОБ'ЄКТИ",
+    "LIVING_SPACES": "ЖИТЛОВИЙ ПРОСТIР",
+    "NEWS": "НОВИНИ",
+    "CONTACTS": "КОНТАКТИ",
+    "ABOUT_US": "ПРО НАС"
 }

@@ -5,16 +5,20 @@
             class="map"></iframe>
     <div>
         <div class='contactsBlock'>
-            <div class='contactsRow'>г. Киев, ул. Ярославов Вал 26-Б, офис 4</div>
+            <div class='contactsRow'>{{translation.ADDRESS}}</div>
         </div>
         <div class='contactsBlock'>
-            <div class='contactsRow'>Светлана Семенова - архитектор, ландшафтный архитектор</div>
-            <div class='contactsRow'>тел.: <a href='tel:+38 (050) 157 34 18'>+38 (050) 157 34 18</a></div>
+            <div class='contactsRow'>{{translation.SEMENOVA}}</div>
+            <div class='contactsRow'>{{translation.TEL}}<a
+                    href='tel:+38 (050) 157 34 18'>{{translation.TEL_SEMENOVA}}</a></div>
         </div>
         <div class='contactsBlock'>
-            <div class='contactsRow'>Ольга Кий - архитектор, руководитель проектов</div>
-            <div class='contactsRow'>тел. : <a href='tel:+38 (096) 016 89 98'>+38 (096) 016 89 98</a></div>
+            <div class='contactsRow'>{{translation.KYI}}</div>
+            <div class='contactsRow'>{{translation.TEL}}<a href='tel:+38 (096) 016 89 98'>{{translation.TEL_KYI}}</a>
+            </div>
         </div>
-        <div class='contactsRow'>e-mail: <a href="mailto:olgakyi.architect@gmail.com">olgakyi.architect@gmail.com</a></div>
+        <div class='contactsRow'>{{translation.EMAIL}}<a href="mailto:olgakyi.architect@gmail.com">{{translation.EMAIL_KYI}}</a>
+        </div>
     </div>
 </div>
+<script>translate()</script>
