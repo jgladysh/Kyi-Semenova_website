@@ -12,51 +12,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="fragment" content="!">
-    <title>My AngularJS App</title>
+    <title>KYI & SEMENOVA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/bower_components/html5-boilerplate/css/normalize.css">
-    <link rel="stylesheet" href="/bower_components/html5-boilerplate/css/main.css">
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/app.css">
-    <script src="/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app.css" xmlns="http://www.w3.org/1999/xhtml">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script data-require="angular-resource@1.2.14" data-semver="1.2.14"
+            src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="app.js"></script>
+    <script src="info/info.js"></script>
+    <script src="contacts/contacts.js"></script>
+    <script src="news/news.js"></script>
+    <script src="services/services.js"></script>
+    <script src="home/home.js"></script>
+    <script src="apartments/apartments.js"></script>
+    <script src="translation/translation.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
 </head>
 <body ng-controller="translationController">
-<script src="/bower_components/angular/angular.js"></script>
-<script src="/bower_components/angular-route/angular-route.js"></script>
-<script data-require="angular-resource@1.2.14" data-semver="1.2.14"
-        src="/bower_components/angular-resource/angular-resource.js"></script>
-<script src="/app.js"></script>
-<!--<script src="view1/view1.js"></script>-->
-<!--<script src="view2/view2.js"></script>-->
-<script src="/info/info.js"></script>
-<script src="/contacts/contacts.js"></script>
-<script src="/news/news.js"></script>
-<script src="/services/services.js"></script>
-<script src="/home/home.js"></script>
-<script src="/apartments/apartments.js"></script>
-<script src="/translation/translation.js"></script>
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/bootstrap/js/dropdown.js"></script>
-<script src="/bower_components/bootstrap/js/collapse.js"></script>
-<script src="/components/version/version.js"></script>
-<script src="/components/version/version-directive.js"></script>
-<script src="/components/version/interpolate-filter.js"></script>
 <div class="wrapper">
     <div class="logo">
-        <h1>Kyi & Semenova Architect</h1>
-
-        <h2>{{translation.TITLE}}</h2>
+        <img class="logo-title" src="img/logo.png" alt="logo">
     </div>
 
     <div class="clear"></div>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div>
-                <form ng-click="translate()">
-                    <button value="en">En</button>
-                    <button value="ua">Укр</button>
-                    <button value="ru">Ру</button>
+            <div class="languages">
+                <form class="languages-form" ng-click="translate()">
+                    <img class="language-bar" src="img/languages.png" alt="">
+
+                    <div class="button-group">
+                        <button class="language-button" value="en">ENG</button>
+                        <button class="language-button" value="ua">UKR</button>
+                        <button class="language-button" value="ru">RUS</button>
+                    </div>
                 </form>
             </div>
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -119,13 +119,8 @@
     <div ng-view>
     </div>
 
-    <footer>
-    </footer>
+    <!--<footer>-->
+    <!--</footer>-->
 </div>
-<!--<div>Angular seed app: v<span app-version></span></div>-->
-
-<!-- In production use:
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
--->
 </body>
 </html>

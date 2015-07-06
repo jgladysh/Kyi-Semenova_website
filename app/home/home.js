@@ -13,6 +13,9 @@ angular.module('myApp.home', ['ngRoute'])
             controller: 'HomeCtrl'
         });
     }])
-    .controller('HomeCtrl', [function () {
-
+    .controller('HomeCtrl', ['$scope',function ($scope) {
+       $scope.play =  function play() {
+            document.getElementById('vidwrap')
+                .innerHTML = '<iframe id="video" src="https://www.youtube.com/embed/54XztbNJ87g?rel=0&modestbranding=1&autohide=1&showinfo=0&theme=light&fs=0&color=white&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+        }
     }]);

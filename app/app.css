@@ -1,104 +1,147 @@
 /* app css stylesheet */
-
-.menu {
-    list-style: none;
-    border-bottom: 0.1em solid black;
-    margin-bottom: 2em;
-    padding: 0 0 0.5em;
+* {
+    font-family: Arial, serif;
+    font-weight: bold;
 }
 
-.menu:before {
-    content: "[";
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
 }
 
-.menu:after {
-    content: "]";
+.navbar-collapse {
+    padding-left: 12px;
+    padding-right: 0;
 }
 
-.menu > li {
-    display: inline;
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 5px;
+    border-radius: 0;
+    left: -35%;
+    padding: 30px 0;
+
+    background: rgba(158, 158, 158, 1);
+    background: -moz-linear-gradient(top, rgba(158, 158, 158, 1) 0%, rgba(224, 224, 224, 1) 84%, rgba(245, 245, 245, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(158, 158, 158, 1) 0%, rgba(224, 224, 224, 1) 84%, rgba(245, 245, 245, 1) 100%);
+    background: -o-linear-gradient(top, rgba(158, 158, 158, 1) 0%, rgba(224, 224, 224, 1) 84%, rgba(245, 245, 245, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(158, 158, 158, 1) 0%, rgba(224, 224, 224, 1) 84%, rgba(245, 245, 245, 1) 100%);
+    background: linear-gradient(to bottom, rgba(158, 158, 158, 1) 0%, rgba(224, 224, 224, 1) 84%, rgba(245, 245, 245, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e', endColorstr='#f5f5f5', GradientType=0);
 }
 
-.menu > li:before {
-    content: "|";
-    padding-right: 0.3em;
+.dropdown-menu > li > a {
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    color: white;
 }
 
-.menu > li:nth-child(1):before {
-    content: "";
-    padding: 0;
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
 }
 
-/*home page*/
+@media (min-width: 768px) {
+    .navbar-nav > li {
+        float: left;
+    }
 
-.video {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    margin: 0 auto;
-}
+    .navbar-nav > li:lang(ru) {
+        margin: 0 29px;
+    }
 
-.video iframe,
-.video object,
-.video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    .navbar-nav > li:lang(ua), .navbar-nav > li:lang(en) {
+        margin: 0 30px;
+    }
 }
 
 .navbar {
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     float: none;
+    margin: 0;
+    background: transparent url(img/nav.jpg) no-repeat;
+    background-size: 980px 63px;
+    height: 63px;
+    border: none;
 }
 
 .navbar-collapse.collapse {
-    background-color: gainsboro;
+    background-color: transparent;
     margin: 0 auto;
 }
 
 .nav > li > a {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
 }
 
 .logo {
+    background: url(img/header.jpg) no-repeat;
+    background-size: 980px 120px;
+    height: 120px;
+}
+
+.logo-title {
+    width: 305px;
+    height: 55px;
     float: right;
-    width: 100%;
-    background-color: gainsboro;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-top: 33px;
+    margin-right: 55px;
+}
+
+.language-button {
+    background-color: transparent;
+    border: none;
+    color: #727272;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.languages-form:last-child {
+    margin-right: 40px;
+}
+
+.languages {
+    float: right;
+}
+
+.language-bar {
+    float: right;
+    width: 292px;
+    height: 20px;
+    position: absolute;
+    left: 688px;
+}
+
+.button-group {
+    z-index: 1;
+    position: relative;
+}
+
+button:focus {
+    outline: 0;
+    color: white;
 }
 
 .clear {
     clear: both;
 }
 
-footer {
-    height: 100px;
-    background-color: gainsboro;
-    margin-top: 20px;
-}
-
 html, body, .container {
     width: 100%;
     padding: 0;
+}
 
-    background: -moz-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
-    /*background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(210,255,82)), color-stop(100%, rgb(145,232,66)));*/
-    background: -webkit-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
-    background: -o-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
-    background: -ms-linear-gradient(-45deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
-    background: linear-gradient(135deg, rgb(210, 255, 82) 0%, rgb(145, 232, 66) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1);
+body {
+    background: url("img/main.jpg") no-repeat;
+    background-position-x: center;
 }
 
 .wrapper {
     max-width: 980px;
     margin: 0 auto;
+    padding-top: 86px;
 }
 
 /*apartments page*/
@@ -106,10 +149,8 @@ html, body, .container {
 .form {
     max-width: 100%;
     min-width: 25%;
-    border-width: 2px;
-    border-color: #CCCCCC;
     border-radius: 4px;
-    border-style: solid;
+    border: 2px solid #CCCCCC;
     color: #222222;
     font-size: 14px;
     margin: 0;
@@ -137,9 +178,7 @@ html, body, .container {
 }
 
 .form input, form textarea, form select {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #666666;
+    border: 1px solid #666666;
     border-radius: 0;
     padding: 3px;
 }
@@ -148,11 +187,8 @@ html, body, .container {
     font-size: 40px;
     color: #607A75;
     padding: 0;
-    margin: 0;
-    margin-bottom: 10px;
-    border-bottom-style: dotted;
-    border-bottom-color: #CCCCCC;
-    border-bottom-width: 2px;
+    margin: 0 0 10px;
+    border-bottom: 2px dotted #CCCCCC;
     border-radius: 0;
     background-color: #FFFFFF;
 }
@@ -198,14 +234,64 @@ span.water {
 
 /*contacts page*/
 
-.contactsWrapper{
-    height: 350px;
+.contactsWrapper {
+    height: 415px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
 }
 
-.contactsRow{
+.contactsRow {
     margin-bottom: 10px;
 }
 
-.contactsBlock{
+.contactsBlock {
     margin-bottom: 20px;
+}
+
+/*home page*/
+
+#video-wrapper {
+    background: url("img/play-img.jpg") no-repeat;
+    width: 100%;
+    height: 416px;
+}
+
+#vidwrap {
+    width: 100%;
+    height: 416px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0 auto;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    width: 100%;
+    height: 416px;
+    margin: 0 auto;
+}
+
+.play {
+    z-index: 2;
+    position: absolute;
+    height: 416px;
+}
+
+.play-img {
+    height: 416px;
+    z-index: 1;
+    position: absolute;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: -120px;
 }

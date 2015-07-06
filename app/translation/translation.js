@@ -27,6 +27,7 @@ angular.module('myApp.translation', ['ngRoute'])
         this.getTranslation = function ($scope, language) {
             var languageFilePath = 'translation/translation_' + language + '.json';
             console.log(languageFilePath);
+            document.documentElement.lang = language;
             $resource(languageFilePath).get(function (data) {
                 $scope.translation = data;
             });
