@@ -235,19 +235,68 @@ span.water {
 
 /*contacts page*/
 
+.contacts {
+    width: 100%;
+    height: 120px;
+    padding: 45px 0 52px 52px;
+    background-color: #e5e5e5;
+}
+
 .contactsWrapper {
-    height: 415px;
-    padding-top: 20px;
-    padding-left: 20px;
     background-color: white;
 }
 
 .contactsRow {
-    margin-bottom: 10px;
+    font-weight: normal;
 }
 
 .contactsBlock {
-    margin-bottom: 20px;
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.contactsBlock:lang(ua) {
+    margin-right: 44px;
+}
+
+.contactsBlock:lang(en) {
+    margin-right: 60px;
+}
+
+a {
+    color: #708F38;
+}
+
+.iframeWrapper {
+    position: relative;
+}
+
+.iframeWrapper::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    z-index: 2;
+    -webkit-box-shadow: inset 0 40px 30px -30px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    inset 0 40px 30px -30px  rgba(50, 50, 50, 0.5);
+    box-shadow:         inset 0 40px 30px -30px  rgba(50, 50, 50, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.map {
+    border: 0;
+    width: 100%;
+    float: left;
+    height: 295px;
+    margin-right: 20px;
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 /*home page*/
@@ -271,9 +320,7 @@ span.water {
     margin: 0 auto;
 }
 
-.video iframe,
-.video object,
-.video embed {
+#video {
     width: 100%;
     height: 416px;
     margin: 0 auto;
@@ -304,7 +351,8 @@ span.water {
     left: -84px;
     height: 417px;
 }
-.area:hover{
+
+.area:hover {
     cursor: pointer;
     fill: #f6a155;
 }

@@ -1,9 +1,11 @@
 {
   "ADDRESS" : "26-B Yaroslaviv Val st., office 4, Kyiv, Ukraine",
-  "SEMENOVA" : "Svitlana Semenova - architect, landscape architect",
+  "SEMENOVA_NAME" : "Svitlana Semenova",
+  "SEMENOVA_POSITION" : " - architect, landscape architect",
   "TEL_SEMENOVA" : "+38 (050) 157 34 18",
   "TEL" : "phone: ",
-  "KYI" : "Olga Kyi - architect, project head manager",
+  "KYI_NAME" : "Olga Kyi",
+  "KYI_POSITION" : " - architect, project head manager",
   "TEL_KYI" : "+38 (096) 016 89 98",
   "EMAIL" : "e-mail: ",
   "EMAIL_KYI" : "olgakyi.architect@gmail.com",
