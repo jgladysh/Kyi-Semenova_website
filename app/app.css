@@ -82,11 +82,14 @@
 }
 
 .logo-title {
-    width: 305px;
-    height: 55px;
-    float: right;
-    margin-top: 33px;
-    margin-right: 55px;
+    width: 500px;
+    margin: 0;
+    position: absolute;
+    top: 182px;
+    left: 715px;
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
 }
 
 .language-button {

@@ -1,26 +1,20 @@
 /**
- * Created by julia on 5/31/15.
+ * Created by julia on 7/27/15.
  */
+
 
 'use strict';
 
-angular.module('myApp.apartments', ['ngRoute'])
+angular.module('myApp.landscapes', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/apartments', {
-            templateUrl: 'apartments/apartments.html',
-            controller: 'ApartmentsCtrl'
+        $routeProvider.when('/landscapes', {
+            templateUrl: 'landscapes/landscapes.html',
+            controller: 'LandscapesCtrl'
         });
     }])
 
-    .controller('ApartmentsCtrl', function ($scope) {
-
-        $("#email").blur(function () {
-            if (!validateEmail(email)) {
-                $('#email')[0].setCustomValidity('Please enter a valid eMail address');
-                return false;
-            }
-        });
+    .controller('LandscapesCtrl', function ($scope) {
 
         $scope.submit = function () {
 
@@ -46,15 +40,10 @@ angular.module('myApp.apartments', ['ngRoute'])
                     'from_email': email,
                     'to': [{'email': user + '@' + site, 'type': 'to'}],
                     'autotext': 'true',
-                    'subject': 'Website questionnaire (apartments)',
+                    'subject': 'Website questionnaire (landscapes)',
                     'html': arr
                 }
             }));
         }
     });
 
-
-function validateEmail(email) {
-    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    return re.test(email);
-}

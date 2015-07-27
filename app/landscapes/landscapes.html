@@ -1,0 +1,528 @@
+<form id="form" class="form" name="form" ng-submit="submit()" ng-controller="LandscapesCtrl"
+      enctype="application/x-www-form-urlencoded"
+      accept-charset="UTF-8">
+    <h1>АНКЕТА </h1>
+
+    <div class="content">
+        <div class="intro"><p style="text-align: left;">&nbsp;</p>
+
+            <div class="intro"
+                 style="box-sizing: border-box; font-family: Arial, serif; font-weight: bold; margin-bottom: 10px; display: block; color: #222222; font-size: 14px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 20px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">
+                ФОРМИРОВАНИЯ ТЕХНИЧЕСКОГО ЗАДАНИЯ НА ПРОЕКТИРОВАНИЕ
+            </div>
+        </div>
+        <div id="section0">
+            <div class="field"><label for="owner">* 1. Заказчик ( имя, фамилия, телефон, e-mail, Skype):</label>
+                <textarea id="owner" name="owner" wrap="hard" required></textarea>
+            </div>
+            <div class="field">
+                <label for="info">2. Информация об объекте ( адрес, телефон, контакты охраны, если есть):</label>
+                <textarea id="info" name="2. Object info:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="residents">3.Сколько человек будет проживать на участке, род занятий (укажите, пожалуйста,
+                    всех членов семьи и их возраст):</label>
+                <textarea id="residents" name="3. Residents:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="family-extension">4. Возможно ли расширение состава семьи ( появление детей,переезд
+                    кого-либо из родителей или одиноких родственников):</label>
+                <textarea id="family-extension" name="4. Family extension:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="residents-specific">5. Имеет ли кто-нибудь из потенциальных пользователей сада ограниченные
+                    физические возможности или аллергию, что следует учесть при
+                    проектировании?</label>
+                <textarea id="residents-specific" name="5. Residents specific:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="animals-landscape">6. Домашние животные, если есть или планируются:</label>
+                <textarea id="animals-landscape" name="6. Animals:" wrap="hard"></textarea>
+            </div>
+            <div class="field"><label for="terms">7. Сроки проектирования и реализации проекта:</label>
+                <textarea id="terms" name="7. Terms" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="staff">8. Обслуживающий персонал:</label>
+                <textarea id="staff" name="8. Staff:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="house-age">9. Возраст дома (приблизительно):</label>
+                <textarea id="house-age" name="9. House age:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="garden-exploitation">10. Когда и в какое время дня сад используется наиболее
+                    интенсивно, а когда вообще должен быть закрыт?</label>
+                <textarea id="garden-exploitation" name="10. Garden exploitation:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <div class="field">
+                    <label for="engineering-networks">11. Какие инженерные сети подведены к участку:</label>
+                    <span class="point">
+                    <input type="checkbox" value="Водоснабжение" id="engineering-networks"
+                           name="11. Engineering networks:">
+                    <span>Водоснабжение</span>
+                    </span>
+                    <span class="point">
+                    <input type="checkbox" value="Электропитание" id="engineering-networks"
+                           name="11. Engineering networks:">
+                    <span>Электропитание</span>
+                        </span>
+                    <span class="point">
+                    <input type="checkbox" value="Канализация" id="engineering-networks"
+                           name="11. Engineering networks:">
+                    <span>Канализация</span>
+                        </span>
+                </div>
+                <div class="field">
+                    <label for="autonomous-engineering-networks">12. Какие инженерные автономные сети есть на
+                        участке?</label>
+                    <span class="point">
+                    <input type="checkbox" value="Водоснабжение" id="autonomous-engineering-networks"
+                           name="12. Autonomous engineering networks:">
+                    <span>Водоснабжение</span>
+                        </span>
+                    <span class="point">
+                    <input type="checkbox" value="Электропитание" id="autonomous-engineering-networks"
+                           name="12. Autonomous engineering networks:">
+                    <span>Электропитание</span>
+                        </span>
+                    <span class="point">
+                    <input type="checkbox" value="Канализация" id="autonomous-engineering-networks"
+                           name="12. Autonomous engineering networks:">
+                    <span>Канализация</span>
+                        </span>
+                </div>
+            </div>
+            <p class="section">13. Какие элементы участка можно убрать?</p>
+
+            <div id="section1">
+                <div class="field">
+                    <label for="buildings-removing">Какие постройки на участке необходимо удалить?</label>
+                    <textarea id="buildings-removing" name="13. Buildings removing:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="buildings-retention">Какие постройки на участке необходимо оставить?</label>
+                    <textarea id="buildings-retention" name="13. Buildings retention:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="plants-removing">Есть ли деревья/насаждения, которые нужно убрать?</label>
+                    <textarea id="plants-removing" name="13. Plants removing:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="fence-changes">Хотите ли вы изменить изгороди, заборы, наружные стены и т. п. (если да,
+                        вы должны уладить эти вопросы с соседями).</label>
+                    <textarea id="fence-changes" name="13. Fence changes:" wrap="hard"></textarea>
+                </div>
+            </div>
+            <p class="section">14. Обслуживание сада</p>
+
+            <div id="section2">
+                <div class="field"><label for="gardening">Планируете ли вы сами ухаживать за садом?</label>
+                    <span class="point">
+                    <input type="radio" value="Да" id="gardening" name="14. Self-care gardening:">
+                    <span>Да</span>
+                        </span>
+                    <span class="point">
+                    <input type="radio" value="Нет" id="gardening" name="14. Self-care gardening:">
+                    <span>Нет</span>
+                        </span>
+                </div>
+                <div class="field">
+                    <label for="gardening-experience">Каков ваш опыт работы в саду и насколько она вам
+                        интересна?</label>
+                    <textarea id="gardening-experience" name="14. Gardening experience:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <span class="point">
+                    <label for="gardener">Планируете ли вы нанять садовника?</label>
+                    <input type="radio" value="Да" id="gardener" name="14. Gardener:">
+                    <span>Да</span>
+                        </span>
+                    <span class="point">
+                    <input type="radio" value="Нет" id="gardener" name="14. Gardener:">
+                    <span>Нет</span>
+                        </span>
+                </div>
+                <div class="field">
+                    <label for="gardener-specific">Постоянно или на отдельные виды работ?</label>
+                    <textarea id="gardener-specific" name="14. Gardener specific:" wrap="hard"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label for="exploitation">15. Как бы вы хотели использовать имеющееся пространство?</label>
+                <span class="point">
+                <input type="checkbox" value="Обеды" id="exploitation" name="15. Exploitation:">
+                <span>Обеды</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Пикники" id="exploitation" name="15. Exploitation:">
+                <span>Пикники</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Солнечные ванны" id="exploitation" name="15. Exploitation:">
+                <span>Солнечные ванны</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Отдых в тени" id="exploitation" name="15. Exploitation:">
+                <span>Отдых в тени</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Бассейн с подогревом" id="exploitation" name="15. Exploitation:">
+                <span>Бассейн с подогревом</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Гидромассажная ванна" id="exploitation" name="15. Exploitation:">
+                <span>Гидромассажная ванна</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Работа" id="exploitation" name="15. Exploitation:">
+                <span>Работа</span>
+                    </span>
+            </div>
+            <div class="field">
+                <label for="playground">Детские игры</label>
+                <span class="point">
+                <input type="radio" value="да" id="playground" name="15. Children playground:">
+                <span>Да</span>
+                    </span>
+                <span class="point">
+                <input type="radio" value="нет" id="playground" name="15. Children playground:">
+                <span>Нет</span>
+                    </span>
+            </div>
+            <div class="field">
+                <label for="playground-equipment">Если игры требуют специального оборудования, опишите его:</label>
+                <textarea id="playground-equipment" name="15. Playground equipment:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="additional-comments">Дополнительные пожелания</label>
+                <textarea id="additional-comments" name="15. Additional comments:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="household-needs">16. Хозяйственные нужды</label>
+                <span class="point">
+                <input type="checkbox" value="Компост" id="household-needs" name="16. Household needs:">
+                <span>Компост</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Сарай" id="household-needs" name="16. Household needs:">
+                <span>Сарай</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Мастерская" id="household-needs" name="16. Household needs:">
+                <span>Мастерская</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Автоматическая система полива" id="household-needs"
+                       name="16. Household needs:">
+                <span>Автоматическая система полива</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Бочка с водой" id="household-needs" name="16. Household needs:">
+                <span>Бочка с водой</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Водопроводный кран для полива" id="household-needs"
+                       name="16. Household needs:">
+                <span>Водопроводный кран для полива</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Место для костра" id="household-needs" name="16. Household needs:">
+                <span>Место для костра</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Погреб" id="household-needs" name="16. Household needs:">
+                <span>Погреб</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Теплица" id="household-needs" name="16. Household needs:">
+                <span>Теплица</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Пандусы" id="household-needs" name="16. Household needs:">
+                <span>Пандусы</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Мусорные баки" id="household-needs" name="16. Household needs:">
+                <span>Мусорные баки</span>
+                    </span>
+            </div>
+            <div class="field">
+                <label for="parking">Площадка для парковки - на сколько машин?</label>
+                <textarea id="parking" name="16. Parking:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="garage">Наличие гаража - на сколько машин?</label>
+                <textarea id="garage" name="16. Garage:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="additional-requirements_16">Дополнительные пожелания:</label>
+                <textarea id="additional-requirements_16" name="16. Additional requirements:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="garden-specific">17. Особенности сада. Что из перечисленного вы хотели бы видеть в
+                    саду?</label>
+                <span class="point">
+                <input type="checkbox" value="Терраса на солнце" id="garden-specific" name="17. Garden specific:">
+                <span>Терраса на солнце</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Терраса в тени" id="garden-specific" name="17. Garden specific:">
+                <span>Терраса в тени</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Стационарный очаг" id="garden-specific" name="17. Garden specific:">
+                <span>Стационарный очаг</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Переносной очаг" id="garden-specific" name="17. Garden specific:">
+                <span>Переносной очаг</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Открытая площадка для отдыха" id="garden-specific"
+                       name="17. Garden specific:">
+                <span>Газон</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Газон" id="garden-specific" name="17. Garden specific:">
+                <span>Открытая площадка для отдыха</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Пряно-ароматические травы" id="garden-specific"
+                       name="17. Garden specific:">
+                <span>Пряно-ароматические травы</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Огород" id="garden-specific" name="17. Garden specific:">
+                <span>Огород</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Луг" id="garden-specific" name="17. Garden specific:">
+                <span>Луг</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Фруктовые деревья" id="garden-specific" name="17. Garden specific:">
+                <span>Фруктовые деревья</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Ягодные кустарники" id="garden-specific" name="17. Garden specific:">
+                <span>Ягодные кустарники</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Арки" id="garden-specific" name="17. Garden specific:">
+                <span>Арки</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Беседка, садовый павильон" id="garden-specific"
+                       name="17. Garden specific:">
+                <span>Беседка, садовый павильон</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Летний дом" id="garden-specific" name="17. Garden specific:">
+                <span>Летний дом</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Водоем" id="garden-specific" name="17. Garden specific:">
+                <span>Водоем</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Фонтан" id="garden-specific" name="17. Garden specific:">
+                <span>Фонтан</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Ручей" id="garden-specific" name="17. Garden specific:">
+                <span>Ручей</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Дежурное освещение" id="garden-specific" name="17. Garden specific:">
+                <span>Дежурное освещение</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Подсветка растений/деревьев" id="garden-specific"
+                       name="17. Garden specific:">
+                <span>Подсветка растений/деревьев</span>
+                    </span>
+                <span class="point">
+                <input type="checkbox" value="Внешняя подсветка  строений" id="garden-specific"
+                       name="17. Garden specific:">
+                <span>Внешняя подсветка  строений</span>
+                    </span>
+            </div>
+            <div class="field">
+                <label for="additional-requirements_17">Дополнительные пожелания</label>
+                <textarea id="additional-requirements_17" name="17. Additional requirements:" wrap="hard"></textarea>
+            </div>
+            <p class="section">18. Материалы</p>
+
+            <div id="section4">
+                <div class="field">
+                    <label for="materials-house">Какие материалы уже используются на участке (в доме):</label>
+                    <textarea id="materials-house" name="18. Materials in house:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="materials-garden">В саду:</label>
+                    <textarea id="materials-garden" name="18. Materials in garden:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="materials-satisfaction">Вам нравятся эти материалы?</label>
+                    <textarea id="materials-satisfaction" name="18. Materials satisfaction:" wrap="hard"></textarea>
+                </div>
+                <p class="section">Какие материалы вы бы хотели видеть в саду?</p>
+
+                <div class="field">
+                    <label for="gravel">Гравий</label>
+                    <textarea id="gravel" name="18. Gravel:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="floorings">Настилы</label>
+                    <textarea id="floorings" name="18. Floorings:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="wood">Дерево</label>
+                    <textarea id="wood" name="18. Wood:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="natural-stone">Натуральный камень</label>
+                    <textarea id="natural-stone" name="18. Natural stone:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="artificial-stone">Искувственный камень</label>
+                    <textarea id="artificial-stone" name="18. Artificial stone:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="recycled-materials">Повторно используемые материалы</label>
+                    <textarea id="recycled-materials" name="18. Recycled materials:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="recyclable-materials">Утилизируемые материалы</label>
+                    <textarea id="recyclable-materials" name="18. Recyclable materials:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="other-materials">Другие материалы</label>
+                    <textarea id="other-materials" name="18. Other materials:" wrap="hard"></textarea>
+                </div>
+                <div class="field">
+                    <label for="unwanted-materials">Какие материалы нежелательны в саду?</label>
+                    <textarea id="unwanted-materials" name="18. Unwanted materials:" wrap="hard"></textarea>
+                </div>
+            </div>
+            <label for="garden-type">19.Тип сада. Каким вы хотите видеть сад?</label>
+            <span class="point">
+            <input type="checkbox" value="Лаконичным/аккуратным" id="garden-type" name="19. Garden type:">
+            <span>Лаконичным/аккуратным</span>
+                </span>
+            <span class="point">
+            <input type="checkbox" value="Наполненным растениями" id="garden-type" name="19. Garden type:">
+            <span>Наполненным растениями</span>
+                </span>
+            <span class="point">
+            <input type="checkbox" value="В деревенском стиле" id="garden-type" name="19. Garden type:">
+            <span>В деревенском стиле</span>
+                </span>
+            <span class="point">
+            <input type="checkbox" value="Традиционным" id="garden-type" name="19. Garden type:">
+            <span>Традиционным</span>
+                </span>
+            <span class="point">
+            <input type="checkbox" value="Регулярным" id="garden-type" name="19. Garden type:">
+            <span>Регулярным</span>
+                </span>
+            <span class="point">
+            <input type="checkbox" value="Современным" id="garden-type" name="19. Garden type:">
+            <span>Современным</span>
+                </span>
+            <span class="point">
+            <input type="checkbox" value="Минималистским" id="garden-type" name="19. Garden type:">
+            <span>Минималистским</span>
+                </span>
+        </div>
+        <p class="section">20. Растения</p>
+
+        <div id="section5">
+            <div class="field"><label for="spring-blooming">Весенне-цветущие</label>
+                <textarea id="spring-blooming" name="20. Spring-blooming:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="summer-blooming">Летне-цветущие</label>
+                <textarea id="summer-blooming" name="20. Summer-blooming:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="fall-blooming">Осенне-цветущие</label>
+                <textarea id="fall-blooming" name="20. Fall-blooming:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="winter-decorativeness">Сохраняющие декоративность зимой</label>
+                <textarea id="winter-decorativeness" name="18. Preserving winter decorativeness:"
+                          wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="softwoods">Хвойные</label>
+                <textarea id="softwoods" name="20. Softwoods:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="fragrant">Ароматные</label>
+                <textarea id="fragrant" name="20. Fragrant:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="plant-preferences">Укажите растения, которые вам нравятся или не нравятся</label>
+                <textarea id="plant-preferences" name="20. Plant-preferences:" wrap="hard"></textarea>
+            </div>
+        </div>
+        <p class="section">21. Цветники</p>
+
+        <div id="section3">
+            <div class="field">
+                <label for="colours-garden">Какие цвета вам нравятся или не нравятся?</label>
+                <textarea id="colours-garden" name="21. Colours:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="collections">Вы коллекционируете что-то, что хотели бы видеть в саду?</label>
+                <textarea id="collections" name="21. Collections:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="garden-disadvantages">Что мешает вам наслаждаться садом (недостаток уединенности, много
+                    шума)?</label>
+                <textarea id="garden-disadvantages" name="21. Garden disadvantages:" wrap="hard"></textarea>
+            </div>
+        </div>
+        <p class="section">22. Дополнительная информация</p>
+
+        <div id="section6">
+            <p class="section">Есть ли какие-либо зоны сада, которые имеют особенности?</p>
+
+            <div class="field">
+                <label for="wet-zones">Влажные. Если да, то где?</label>
+                <textarea id="wet-zones" name="20. Wet zones:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="dry-zones">Сухие. Если да, то где?</label>
+                <textarea id="dry-zones" name="22. Dry zones:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="windy-zones">Ветреные. Если да, то где?</label>
+                <textarea id="windy-zones" name="22. Windy zones:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="stinky-zones">С неприятным запахом. Если да, то где?</label>
+                <textarea id="stinky-zones" name="22. Stinky zones:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="shaded-zones">Какие участки сада наиболее затененные?</label>
+                <textarea id="shaded-zones" name="22. Shaded zones:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="sunny-zones">Какие участки сада наименее затененные?</label>
+                <textarea id="sunny-zones" name="22. Sunny zones:" wrap="hard"></textarea>
+            </div>
+            <div class="field">
+                <label for="beautiful-views">Красивые виды за пределами участка?</label>
+                <textarea id="beautiful-views" name="22. Beautiful views:" wrap="hard"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <label style="font-style: italic; margin: 30px 0">Поля со "*" обязательны для заполнения</label>
+    </div>
+    <div class="field"><input type="submit" id="send" name="send" value="Отправить" style="width: 30%"></div>
+</form>

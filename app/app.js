@@ -10,7 +10,8 @@ angular.module('myApp', [
     'myApp.news',
     'myApp.services',
     'myApp.home',
-    'myApp.apartments'
+    'myApp.apartments',
+    'myApp.landscapes'
 ]).
     config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 

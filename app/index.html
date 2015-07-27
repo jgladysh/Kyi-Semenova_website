@@ -31,6 +31,7 @@
     <script src="services/services.js"></script>
     <script src="home/home.js"></script>
     <script src="apartments/apartments.js"></script>
+    <script src="landscapes/landscapes.js"></script>
     <script src="translation/translation.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/js/dropdown.js"></script>
@@ -41,7 +42,7 @@
 </head>
 <body ng-controller="translationController">
 <div class="wrapper">
-    <div class="logo"></div>
+    <div class="logo"><div class = 'logo-title'>{{translation.TITLE}}</div></div>
 
     <div class="clear"></div>
     <nav class="navbar navbar-default">
@@ -91,7 +92,7 @@
                             <li><a href="#/">{{translation.HOUSE_OF_FUTURE}}</a></li>
                             <li><a href="#/apartments">{{translation.INTERIOR_DESIGN}}</a></li>
                             <li><a href="#/">{{translation.CONCEPTUAL_BUSINESS_OBJECT}}</a></li>
-                            <li><a href="#/">{{translation.PARKS_AND_LANDSCAPES}}</a></li>
+                            <li><a href="#/landscapes">{{translation.PARKS_AND_LANDSCAPES}}</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
